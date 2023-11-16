@@ -8,14 +8,14 @@ class TestYAMLtoJSON(unittest.TestCase):
     # Test getting the json file name from absolute path
     def test_get_json_file_name(self):
         starting_file = "/Users/Bob/projects/zcw_python/splitting_files/testy.yaml"
-        expected = 'testy'
+        expected = 'testy.json'
         actual = y2j.get_json_file_name(starting_file)
         self.assertEqual(expected, actual)  # add assertion here
 
     # Test getting the json file name from relative yaml file path is working
     def test_get_JSON_file_name2(self):
         starting_file = "ricky.yaml"
-        expected = 'ricky'
+        expected = 'ricky.json'
         actual = y2j.get_json_file_name(starting_file)
         self.assertEqual(expected, actual)  # add assertion here
 
